@@ -89,6 +89,14 @@
   version = "v1.0.2"
 
 [[projects]]
+  digest = "1:ba852707958e39694e7f64328008287892adf9b1aed0174480e2f50e0c23e521"
+  name = "github.com/logrusorgru/aurora"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "21d75270181e0436fee7bd58b991c212cf309068"
+  version = "v2.0"
+
+[[projects]]
   digest = "1:7c084e0e780596dd2a7e20d25803909a9a43689c153de953520dfbc0b0e51166"
   name = "github.com/mattn/go-colorable"
   packages = ["."]
@@ -319,7 +327,9 @@
   analyzer-version = 1
   input-imports = [
     "github.com/google/go-github/github",
+    "github.com/logrusorgru/aurora",
     "github.com/zricethezav/gitleaks/src",
+    "gopkg.in/src-d/go-git.v4",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
