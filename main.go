@@ -7,16 +7,18 @@ import (
 	"runtime"
 	"sync"
 
-	. "github.com/logrusorgru/aurora"
 	"github.com/google/go-github/github"
+	. "github.com/logrusorgru/aurora"
 	gitleaks "github.com/zricethezav/gitleaks/src"
+	"golang.org/x/oauth2"
 )
 
 var wg sync.WaitGroup
 
 func checkRepos(repos []*github.Repository) {
 	for _, repo := range repos {
-		repoURL := *repo.GitURL
+		// fmt.Println(repo)
+		repoURL := *repo.HTMLURL
 		name := *repo.Name
 		options := &gitleaks.Options{GithubURL: repoURL}
 
@@ -40,19 +42,24 @@ func checkRepos(repos []*github.Repository) {
 }
 
 func main() {
-	org := "github"
+	org := "elanco"
 	fmt.Printf("%s Initialising scan on %s\n", Bold("   [main]"), org)
 
 	fmt.Printf("%s There are %d threads available\n", Bold("   [main]"), runtime.NumCPU())
-	client := github.NewClient(nil)
+	ctx := context.Background()
+	ts := oauth2.StaticTokenSource(
+		&oauth2.Token{AccessToken: "2152fc28a0ddbadfb8024f12645293f3e55f00e1"},
+	)
+	tc := oauth2.NewClient(ctx, ts)
+
+	client := github.NewClient(tc)
 	// list public repositories for org "github"
-	opt := &github.RepositoryListByOrgOptions{Type: "public"}
+	opt := &github.RepositoryListByOrgOptions{Type: "all"}
 	repos, _, err := client.Repositories.ListByOrg(context.Background(), org, opt)
 
 	if err != nil {
 		log.Fatal(err)
 	}
-
 
 	// get all node repos
 	// go doesn't have map :(
@@ -75,7 +82,7 @@ func main() {
 	// // calculate a deficit (rounding errors when splitting work between threads)
 	deficit := len(jsRepos) - (groupCount * threads)
 	if deficit > 0 {
-		fmt.Printf("%s There is a deficit of %d groups. Adding to thread...\n", Yellow("   [main (warn)]") ,deficit)
+		fmt.Printf("%s There is a deficit of %d groups. Adding to thread...\n", Yellow("   [main (warn)]"), deficit)
 		wg.Add(1)
 		go checkRepos(jsRepos[deficit:])
 		jsRepos = jsRepos[deficit:]

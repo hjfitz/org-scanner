@@ -1,24 +1,25 @@
 package main
 
 import (
-	"os"
+	"encoding/json"
 	"fmt"
-	"time"
+	"math/rand"
+	"os"
+	"os/exec"
 	"path"
 	"strings"
-	"os/exec"
-	"math/rand"
-	"encoding/json"
+	"time"
 
-	"gopkg.in/src-d/go-git.v4"
 	. "github.com/logrusorgru/aurora"
+	git "gopkg.in/src-d/go-git.v4"
+	"gopkg.in/src-d/go-git.v4/plumbing/transport/http"
 )
 
 type SecIssue struct {
 	Title       string `json:"title"`
 	Description string `json:"description"`
 	Tag         string `json:"tag"`
-	Line        int 	`json:"line"`
+	Line        int    `json:"line"`
 	Lines       string `json:"lines"`
 	Filename    string `json:"filename"`
 	Path        string `json:"path"`
@@ -26,39 +27,39 @@ type SecIssue struct {
 }
 
 type HeaderIssue struct {
-	Description	string `json:"description"`
-	Tag			string `json:"tag"`
-	Title		string `json:"title"`
+	Description string `json:"description"`
+	Tag         string `json:"tag"`
+	Title       string `json:"title"`
 }
 
 type RepoIssue struct {
-	Files 			[]string		`json:"files"`
-	SecIssues 		[]SecIssue		`json:"security_issues"`
-	HeaderIssues	[]HeaderIssue	`json:"header_issues"`
+	Files        []string      `json:"files"`
+	SecIssues    []SecIssue    `json:"security_issues"`
+	HeaderIssues []HeaderIssue `json:"header_issues"`
 }
 
 // happens to be the same for both yarn and npm
 type AuditMeta struct {
-	Info		string	`json:info`
-	Low			string	`json:low`
-	Moderate	string	`json:moderate`
-	High		string	`json:high`
-	Critical	string	`json:critical`
+	Info     string `json:info`
+	Low      string `json:low`
+	Moderate string `json:moderate`
+	High     string `json:high`
+	Critical string `json:critical`
 }
 
 func Exists(name string) bool {
-    if _, err := os.Stat(name); err != nil {
-        if os.IsNotExist(err) {
-            return false
-        }
-    }
-    return true
+	if _, err := os.Stat(name); err != nil {
+		if os.IsNotExist(err) {
+			return false
+		}
+	}
+	return true
 }
 
 func runAudit(pkg string, dir string) AuditMeta {
 	var cmd *exec.Cmd
 	var auditResult AuditMeta
-	if (pkg == "yarn") {
+	if pkg == "yarn" {
 		cmd = exec.Command("yarn", "audit", "--json", "|", "jq", "'select(.data.vulnerabilities != null) | .data.vulnerabilities'", "-r", "-M")
 	} else { // if pkg == npm
 		cmd = exec.Command("npm", "audit", "--json", "|", "jq", "'select(.metadata.vulnerabilities != null) | .metadata.vulnerabilities'", "-r", "-M")
@@ -66,7 +67,7 @@ func runAudit(pkg string, dir string) AuditMeta {
 	cmd.Dir = dir
 	pkgIssues, err := cmd.Output()
 	handleErr(err)
-	fmt.Println(string(pkgIssues))
+	// fmt.Println(string(pkgIssues))
 	json.Unmarshal(pkgIssues, &auditResult)
 	return auditResult
 }
@@ -84,7 +85,7 @@ func auditPkgs(directory string) {
 	// check yarn.lock
 	if Exists(yarnDir) {
 		auditResult = runAudit("yarn", directory)
-	// check package-lock
+		// check package-lock
 	} else if Exists(npmDir) {
 		auditResult = runAudit("npm", directory)
 	} else {
@@ -106,10 +107,16 @@ func NodeScan(repo string) {
 
 	directory := path.Join("/tmp/", randStringRunes(25))
 	outfile := path.Join(directory, (randStringRunes(15) + ".json"))
+	token := "2152fc28a0ddbadfb8024f12645293f3e55f00e1"
 
 	fmt.Printf("%s cloning %s for SSA into %s\n", Bold("   [source analysis]"), repo, directory)
-
-	_, err := git.PlainClone(directory, false, &git.CloneOptions{URL: repo})
+	_, err := git.PlainClone(directory, false, &git.CloneOptions{
+		URL: repo,
+		Auth: &http.BasicAuth{
+			Username: "abc123", // yes, this can be anything except an empty string
+			Password: token,
+		},
+	})
 
 	fmt.Printf("%s cloning %s complete. Scanning...\n", Bold("   [source analysis]"), repo)
 
@@ -124,13 +131,12 @@ func NodeScan(repo string) {
 	parser := exec.Command("node", "./nodejsscan-parser.js", outfile)
 	parserOut, err := parser.Output()
 
-
 	var result RepoIssue
 	json.Unmarshal(parserOut, &result)
 
 	issues := len(result.SecIssues)
 
-	if (issues > 0) {	
+	if issues > 0 {
 		fmt.Printf("%s %s Found %d issues in \"%s\"\n", Red("!!"), Bold("[source analysis]"), len(result.SecIssues), repo)
 		for _, issue := range result.SecIssues {
 			filename := strings.Replace(issue.Path, directory, "", 1)

@@ -1,0 +1,27 @@
+[1m   [main][0m Initialising scan on elanco
+[1m   [main][0m There are 4 threads available
+[1m   [main][0m Found 11 JavaScript/TypeScript repos
+[1m   [main][0m Giving 2 repo(s) to each thread
+[33m   [main (warn)][0m There is a deficit of 3 groups. Adding to thread...
+[1m   [source analysis][0m cloning https://github.com/elanco/DevOps-Pipeline for SSA into /tmp/WqEPHAlaeLkCgGjMsRgfRWPlN
+[1m   [source analysis][0m cloning https://github.com/elanco/ets-template-typescript-react for SSA into /tmp/uGfRIsJmsDctQdlUCscldDmmH
+[1m   [source analysis][0m cloning https://github.com/elanco/ets-workday-boomi-rsa-int for SSA into /tmp/eoElwBzvWawEosrMXNyZUrxBJ
+[1m   [source analysis][0m cloning https://github.com/elanco/devops-extension-elanco-tools for SSA into /tmp/BpFlJRcTnHzeEneWrCinsdCbM
+[1m   [source analysis][0m cloning https://github.com/elanco/ets-template-typescript-react for SSA into /tmp/QTBiHJRuKaHXPSVvfQjloRHKq
+[1m   [source analysis][0m cloning https://github.com/elanco/devops-extension-elanco-tools complete. Scanning...
+[1m   [source analysis][0m cloning https://github.com/elanco/ets-workday-boomi-rsa-int complete. Scanning...
+[1m   [source analysis][0m cloning https://github.com/elanco/ets-template-typescript-react complete. Scanning...
+[1m   [source analysis][0m cloning https://github.com/elanco/ets-template-typescript-react complete. Scanning...
+[1m   [source analysis][0m cloning https://github.com/elanco/DevOps-Pipeline complete. Scanning...
+[32m ✓[0m [1m[source analysis][0m Found 0 issues in "https://github.com/elanco/devops-extension-elanco-tools"
+[32m ✓[0m [1m[source analysis][0m Found 0 issues in "https://github.com/elanco/DevOps-Pipeline"
+[32m ✓[0m [1m[source analysis][0m Found 0 issues in "https://github.com/elanco/ets-template-typescript-react"
+[32m ✓[0m [1m[source analysis][0m Found 0 issues in "https://github.com/elanco/ets-workday-boomi-rsa-int"
+[32m ✓[0m [1m[source analysis][0m Found 0 issues in "https://github.com/elanco/ets-template-typescript-react"
+{    }
+[1m   [source analysis][0m Removing /tmp/BpFlJRcTnHzeEneWrCinsdCbM
+[32m ✓[0m [1m[leaks][0m 0 leaks found for 'devops-extension-elanco-tools'
+[1m   [source analysis][0m cloning https://github.com/elanco/ets-cms-poc for SSA into /tmp/KMiRUAxsPCQGLmEfZRplsKnAH
+[1m   [source analysis][0m cloning https://github.com/elanco/ets-cms-poc complete. Scanning...
+[32m ✓[0m [1m[source analysis][0m Found 0 issues in "https://github.com/elanco/ets-cms-poc"
+[1m   [package audit][0m creating lockfile
