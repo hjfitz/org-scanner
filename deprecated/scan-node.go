@@ -107,7 +107,7 @@ func NodeScan(repo string) {
 
 	directory := path.Join("/tmp/", randStringRunes(25))
 	outfile := path.Join(directory, (randStringRunes(15) + ".json"))
-	token := "2152fc28a0ddbadfb8024f12645293f3e55f00e1"
+	token := "no"
 
 	fmt.Printf("%s cloning %s for SSA into %s\n", Bold("   [source analysis]"), repo, directory)
 	_, err := git.PlainClone(directory, false, &git.CloneOptions{

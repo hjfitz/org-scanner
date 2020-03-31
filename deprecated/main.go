@@ -48,7 +48,7 @@ func main() {
 	fmt.Printf("%s There are %d threads available\n", Bold("   [main]"), runtime.NumCPU())
 	ctx := context.Background()
 	ts := oauth2.StaticTokenSource(
-		&oauth2.Token{AccessToken: "2152fc28a0ddbadfb8024f12645293f3e55f00e1"},
+		&oauth2.Token{AccessToken: "no"},
 	)
 	tc := oauth2.NewClient(ctx, ts)
 
