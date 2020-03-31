@@ -1,27 +1,405 @@
-[1m   [main][0m Initialising scan on elanco
-[1m   [main][0m There are 4 threads available
-[1m   [main][0m Found 11 JavaScript/TypeScript repos
-[1m   [main][0m Giving 2 repo(s) to each thread
-[33m   [main (warn)][0m There is a deficit of 3 groups. Adding to thread...
-[1m   [source analysis][0m cloning https://github.com/elanco/DevOps-Pipeline for SSA into /tmp/WqEPHAlaeLkCgGjMsRgfRWPlN
-[1m   [source analysis][0m cloning https://github.com/elanco/ets-template-typescript-react for SSA into /tmp/uGfRIsJmsDctQdlUCscldDmmH
-[1m   [source analysis][0m cloning https://github.com/elanco/ets-workday-boomi-rsa-int for SSA into /tmp/eoElwBzvWawEosrMXNyZUrxBJ
-[1m   [source analysis][0m cloning https://github.com/elanco/devops-extension-elanco-tools for SSA into /tmp/BpFlJRcTnHzeEneWrCinsdCbM
-[1m   [source analysis][0m cloning https://github.com/elanco/ets-template-typescript-react for SSA into /tmp/QTBiHJRuKaHXPSVvfQjloRHKq
-[1m   [source analysis][0m cloning https://github.com/elanco/devops-extension-elanco-tools complete. Scanning...
-[1m   [source analysis][0m cloning https://github.com/elanco/ets-workday-boomi-rsa-int complete. Scanning...
-[1m   [source analysis][0m cloning https://github.com/elanco/ets-template-typescript-react complete. Scanning...
-[1m   [source analysis][0m cloning https://github.com/elanco/ets-template-typescript-react complete. Scanning...
-[1m   [source analysis][0m cloning https://github.com/elanco/DevOps-Pipeline complete. Scanning...
-[32m ✓[0m [1m[source analysis][0m Found 0 issues in "https://github.com/elanco/devops-extension-elanco-tools"
-[32m ✓[0m [1m[source analysis][0m Found 0 issues in "https://github.com/elanco/DevOps-Pipeline"
-[32m ✓[0m [1m[source analysis][0m Found 0 issues in "https://github.com/elanco/ets-template-typescript-react"
-[32m ✓[0m [1m[source analysis][0m Found 0 issues in "https://github.com/elanco/ets-workday-boomi-rsa-int"
-[32m ✓[0m [1m[source analysis][0m Found 0 issues in "https://github.com/elanco/ets-template-typescript-react"
-{    }
-[1m   [source analysis][0m Removing /tmp/BpFlJRcTnHzeEneWrCinsdCbM
-[32m ✓[0m [1m[leaks][0m 0 leaks found for 'devops-extension-elanco-tools'
-[1m   [source analysis][0m cloning https://github.com/elanco/ets-cms-poc for SSA into /tmp/KMiRUAxsPCQGLmEfZRplsKnAH
-[1m   [source analysis][0m cloning https://github.com/elanco/ets-cms-poc complete. Scanning...
-[32m ✓[0m [1m[source analysis][0m Found 0 issues in "https://github.com/elanco/ets-cms-poc"
-[1m   [package audit][0m creating lockfile
+lib/results/elanco_vn-key-results.log
+[36mINFO[0m[2020-02-25T16:14:13Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:14:17Z] 1 leaks detected. 31 commits audited in 3 seconds 51 milliseconds 983 microseconds 
+lib/results/ELANCO_ANIMALHEALTH-key-results.log
+[36mINFO[0m[2020-02-25T17:27:07Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:27:08Z] No leaks detected. 2 commits audited in 370 milliseconds 7 microseconds 
+lib/results/ELANCO_AR-key-results.log
+[36mINFO[0m[2020-02-25T17:14:29Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:14:41Z] 4 leaks detected. 74 commits audited in 11 seconds 558 milliseconds 101 microseconds 
+lib/results/ELANCO_ATOPICA_DE-key-results.log
+[36mINFO[0m[2020-02-25T16:29:06Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:29:13Z] No leaks detected. 177 commits audited in 6 seconds 358 milliseconds 220 microseconds 
+lib/results/ELANCO_AUTH_MODULE-key-results.log
+[36mINFO[0m[2020-02-25T16:51:50Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:51:51Z] No leaks detected. 643 commits audited in 930 milliseconds 432 microseconds 
+lib/results/ELANCO_AUTH_MODULE_APP-key-results.log
+[36mINFO[0m[2020-02-25T16:55:07Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:55:07Z] No leaks detected. 3 commits audited in 150 milliseconds 638 microseconds 
+lib/results/ELANCO_Affiliate-key-results.log
+[36mINFO[0m[2020-02-25T16:57:13Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:57:20Z] 1 leaks detected. 441 commits audited in 6 seconds 138 milliseconds 954 microseconds 
+lib/results/ELANCO_Aqua-key-results.log
+[36mINFO[0m[2020-02-25T17:45:41Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:45:42Z] No leaks detected. 195 commits audited in 972 milliseconds 777 microseconds 
+lib/results/ELANCO_Architecture-key-results.log
+[36mINFO[0m[2020-02-25T16:50:21Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:50:25Z] 2 leaks detected. 578 commits audited in 4 seconds 258 milliseconds 435 microseconds 
+lib/results/ELANCO_BO-key-results.log
+[36mINFO[0m[2020-02-25T17:23:16Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:23:27Z] 8 leaks detected. 50 commits audited in 10 seconds 837 milliseconds 725 microseconds 
+lib/results/ELANCO_CH-key-results.log
+[36mINFO[0m[2020-02-25T16:18:04Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:18:09Z] No leaks detected. 101 commits audited in 4 seconds 134 milliseconds 87 microseconds 
+lib/results/ELANCO_CL-key-results.log
+[36mINFO[0m[2020-02-25T17:23:46Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:23:56Z] 8 leaks detected. 45 commits audited in 9 seconds 944 milliseconds 415 microseconds 
+lib/results/ELANCO_COAST-key-results.log
+[36mINFO[0m[2020-02-25T17:21:48Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:22:18Z] No leaks detected. 773 commits audited in 28 seconds 110 milliseconds 358 microseconds 
+lib/results/ELANCO_CREDELIO-FREEDOSE-key-results.log
+[36mINFO[0m[2020-02-25T17:19:01Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:19:01Z] No leaks detected. 3 commits audited in 366 milliseconds 220 microseconds 
+lib/results/ELANCO_CREDELIO_UK-key-results.log
+[36mINFO[0m[2020-02-25T16:41:40Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:41:44Z] No leaks detected. 28 commits audited in 2 seconds 663 milliseconds 884 microseconds 
+lib/results/ELANCO_Cheristin_Capstar-key-results.log
+[36mINFO[0m[2020-02-25T17:14:50Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:14:51Z] No leaks detected. 112 commits audited in 1 second 128 milliseconds 182 microseconds 
+lib/results/ELANCO_Contentful_Redis-key-results.log
+[36mINFO[0m[2020-02-25T17:10:43Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:10:44Z] No leaks detected. 38 commits audited in 102 milliseconds 478 microseconds 
+lib/results/ELANCO_Credelio_CA-key-results.log
+[36mINFO[0m[2020-02-25T17:19:39Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:19:40Z] No leaks detected. 65 commits audited in 855 milliseconds 620 microseconds 
+lib/results/ELANCO_Credelio_Microsite_US-key-results.log
+[36mINFO[0m[2020-02-25T16:39:09Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:39:18Z] 51 leaks detected. 413 commits audited in 7 seconds 41 milliseconds 679 microseconds 
+lib/results/ELANCO_DERAMAXX_NEW-key-results.log
+[36mINFO[0m[2020-02-25T16:42:31Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:42:33Z] No leaks detected. 53 commits audited in 1 second 735 milliseconds 436 microseconds 
+lib/results/ELANCO_DERAMAXX_OLD-key-results.log
+[36mINFO[0m[2020-02-25T16:17:54Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:17:57Z] No leaks detected. 78 commits audited in 1 second 844 milliseconds 984 microseconds 
+lib/results/ELANCO_DESPARASITACAODELICIOSA_PT-key-results.log
+[36mINFO[0m[2020-02-25T16:46:46Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:47:02Z] No leaks detected. 196 commits audited in 14 seconds 974 milliseconds 872 microseconds 
+lib/results/ELANCO_DK-key-results.log
+[36mINFO[0m[2020-02-25T16:20:33Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:20:39Z] No leaks detected. 18 commits audited in 1 second 782 milliseconds 642 microseconds 
+lib/results/ELANCO_Digital_Components-key-results.log
+[36mINFO[0m[2020-02-25T17:26:24Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:26:26Z] No leaks detected. 2 commits audited in 525 milliseconds 769 microseconds 
+lib/results/ELANCO_ELANCO360-key-results.log
+[36mINFO[0m[2020-02-25T16:18:25Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:18:30Z] No leaks detected. 71 commits audited in 4 seconds 44 milliseconds 889 microseconds 
+lib/results/ELANCO_ELANCOANIMALHEALTH_BE-key-results.log
+[36mINFO[0m[2020-02-25T16:56:12Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:56:30Z] 2 leaks detected. 146 commits audited in 18 seconds 308 milliseconds 955 microseconds 
+lib/results/ELANCO_ELANCOCOM-key-results.log
+[36mINFO[0m[2020-02-25T16:30:24Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:30:39Z] 5 leaks detected. 482 commits audited in 10 seconds 812 milliseconds 746 microseconds 
+lib/results/ELANCO_ELANCO_CO-key-results.log
+[36mINFO[0m[2020-02-25T16:41:02Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:41:17Z] 6 leaks detected. 92 commits audited in 13 seconds 852 milliseconds 325 microseconds 
+lib/results/ELANCO_ELANCO_DE-key-results.log
+[36mINFO[0m[2020-02-25T16:26:54Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:27:26Z] 5 leaks detected. 444 commits audited in 31 seconds 300 milliseconds 256 microseconds 
+lib/results/ELANCO_ELANCO_ES_NB-key-results.log
+[36mINFO[0m[2020-02-25T16:43:58Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:44:06Z] 1 leaks detected. 106 commits audited in 6 seconds 157 milliseconds 66 microseconds 
+lib/results/ELANCO_ELANCO_EU-key-results.log
+[36mINFO[0m[2020-02-25T16:34:44Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:34:48Z] No leaks detected. 106 commits audited in 3 seconds 648 milliseconds 260 microseconds 
+lib/results/ELANCO_ELANCO_PL-key-results.log
+[36mINFO[0m[2020-02-25T16:33:07Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:33:11Z] No leaks detected. 15 commits audited in 1 second 437 milliseconds 549 microseconds 
+lib/results/ELANCO_ELANCO_PT_NB-key-results.log
+[36mINFO[0m[2020-02-25T16:45:37Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:45:48Z] 1 leaks detected. 6 commits audited in 5 seconds 657 milliseconds 533 microseconds 
+lib/results/ELANCO_ENDLICHJUCKFREI_DE-key-results.log
+[36mINFO[0m[2020-02-25T16:33:22Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:33:25Z] No leaks detected. 34 commits audited in 2 seconds 423 milliseconds 733 microseconds 
+lib/results/ELANCO_ENOUGHMOVEMENT-key-results.log
+[36mINFO[0m[2020-02-25T16:21:23Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:21:29Z] 11 leaks detected. 104 commits audited in 5 seconds 254 milliseconds 519 microseconds 
+lib/results/ELANCO_EPIPORTAL-key-results.log
+[36mINFO[0m[2020-02-25T16:51:09Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:51:19Z] 4 leaks detected. 363 commits audited in 9 seconds 231 milliseconds 458 microseconds 
+lib/results/ELANCO_EPIPORTAL_API-key-results.log
+[36mINFO[0m[2020-02-25T16:51:26Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:51:27Z] No leaks detected. 2 commits audited in 354 milliseconds 211 microseconds 
+lib/results/ELANCO_ES-key-results.log
+[36mINFO[0m[2020-02-25T16:21:06Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:21:11Z] No leaks detected. 54 commits audited in 3 seconds 515 milliseconds 275 microseconds 
+lib/results/ELANCO_Elanco_DK_NB-key-results.log
+[36mINFO[0m[2020-02-25T16:37:21Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:37:29Z] 1 leaks detected. 52 commits audited in 7 seconds 536 milliseconds 242 microseconds 
+lib/results/ELANCO_Elanco_Extinosad-key-results.log
+[36mINFO[0m[2020-02-25T16:39:52Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:40:02Z] No leaks detected. 197 commits audited in 8 seconds 800 milliseconds 222 microseconds 
+lib/results/ELANCO_Elanco_FI-key-results.log
+[36mINFO[0m[2020-02-25T16:54:54Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:55:00Z] 1 leaks detected. 93 commits audited in 5 seconds 592 milliseconds 91 microseconds 
+lib/results/ELANCO_Elanco_Filariosi_IT-key-results.log
+[36mINFO[0m[2020-02-25T16:36:05Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:36:13Z] No leaks detected. 111 commits audited in 8 seconds 543 milliseconds 833 microseconds 
+lib/results/ELANCO_Elanco_Janrain_global_instance-key-results.log
+[36mINFO[0m[2020-02-25T16:36:31Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:36:34Z] 1 leaks detected. 139 commits audited in 2 seconds 849 milliseconds 459 microseconds 
+lib/results/ELANCO_Elanco_Ontwormingsadvies-key-results.log
+[36mINFO[0m[2020-02-25T16:34:17Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:34:20Z] No leaks detected. 66 commits audited in 3 seconds 281 milliseconds 618 microseconds 
+lib/results/ELANCO_Elanco_SE_NB-key-results.log
+[36mINFO[0m[2020-02-25T16:38:17Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:38:26Z] 2 leaks detected. 62 commits audited in 9 seconds 33 milliseconds 437 microseconds 
+lib/results/ELANCO_FORTEKORAT_AU-key-results.log
+[36mINFO[0m[2020-02-25T16:25:30Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:25:31Z] No leaks detected. 24 commits audited in 889 milliseconds 426 microseconds 
+lib/results/ELANCO_Fleasy-key-results.log
+[36mINFO[0m[2020-02-25T17:25:26Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:25:27Z] 2 leaks detected. 20 commits audited in 1 second 200 milliseconds 494 microseconds 
+lib/results/ELANCO_Freedose_WinterPromo-key-results.log
+[36mINFO[0m[2020-02-25T17:27:20Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:27:22Z] 1 leaks detected. 2 commits audited in 2 seconds 51 milliseconds 387 microseconds 
+lib/results/ELANCO_GLOBAL_PRIVACY-key-results.log
+[36mINFO[0m[2020-02-25T16:42:10Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:42:17Z] No leaks detected. 156 commits audited in 4 seconds 525 milliseconds 930 microseconds 
+lib/results/ELANCO_Galliprant_UK-key-results.log
+[36mINFO[0m[2020-02-25T17:10:52Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:10:53Z] No leaks detected. 68 commits audited in 660 milliseconds 495 microseconds 
+lib/results/ELANCO_Galliprant_VET-key-results.log
+[36mINFO[0m[2020-02-25T17:35:46Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:45:28Z] No leaks detected. 202 commits audited in 9 minutes 38 seconds 379 milliseconds 487 microseconds 
+lib/results/ELANCO_Galliprant_it-key-results.log
+[36mINFO[0m[2020-02-25T17:15:11Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:15:16Z] 2 leaks detected. 141 commits audited in 4 seconds 580 milliseconds 416 microseconds 
+lib/results/ELANCO_IT_Command_Center-key-results.log
+[36mINFO[0m[2020-02-25T17:06:56Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:10:08Z] 4 leaks detected. 604 commits audited in 3 minutes 11 seconds 714 milliseconds 609 microseconds 
+lib/results/ELANCO_Ignite-UI-Rebuilding-key-results.log
+[36mINFO[0m[2020-02-25T16:52:53Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:52:56Z] No leaks detected. 328 commits audited in 2 seconds 345 milliseconds 455 microseconds 
+lib/results/ELANCO_Interceptorplus_CA-key-results.log
+[36mINFO[0m[2020-02-25T17:21:10Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:21:11Z] No leaks detected. 50 commits audited in 524 milliseconds 465 microseconds 
+lib/results/ELANCO_LABELS-key-results.log
+[36mINFO[0m[2020-02-25T16:42:51Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:42:52Z] No leaks detected. 63 commits audited in 890 milliseconds 289 microseconds 
+lib/results/ELANCO_LADESPARASITACIONDELICIOSA_ES-key-results.log
+[36mINFO[0m[2020-02-25T16:47:28Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:47:32Z] No leaks detected. 286 commits audited in 3 seconds 799 milliseconds 484 microseconds 
+lib/results/ELANCO_MARKETINGTOOLKIT_MICROSITE-key-results.log
+[36mINFO[0m[2020-02-25T16:28:20Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:28:39Z] No leaks detected. 55 commits audited in 18 seconds 311 milliseconds 335 microseconds 
+lib/results/ELANCO_MILBEMAX_DE-key-results.log
+[36mINFO[0m[2020-02-25T16:29:33Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:29:36Z] No leaks detected. 65 commits audited in 2 seconds 111 milliseconds 670 microseconds 
+lib/results/ELANCO_MILBEMAX_SE_NEW-key-results.log
+[36mINFO[0m[2020-02-25T16:55:14Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:55:16Z] No leaks detected. 142 commits audited in 1 second 377 milliseconds 977 microseconds 
+lib/results/ELANCO_MYMILBEMAX_RU-key-results.log
+[36mINFO[0m[2020-02-25T17:10:33Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:10:36Z] No leaks detected. 129 commits audited in 3 seconds 780 milliseconds 129 microseconds 
+lib/results/ELANCO_Maintenance-key-results.log
+[36mINFO[0m[2020-02-25T16:50:50Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:50:51Z] 1 leaks detected. 37 commits audited in 575 milliseconds 39 microseconds 
+lib/results/ELANCO_Marketo-key-results.log
+[36mINFO[0m[2020-02-25T17:25:01Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:25:10Z] 5 leaks detected. 96 commits audited in 8 seconds 192 milliseconds 663 microseconds 
+lib/results/ELANCO_Meta_Data_Tool-key-results.log
+[36mINFO[0m[2020-02-25T17:18:52Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:18:53Z] No leaks detected. 235 commits audited in 1 second 490 milliseconds 149 microseconds 
+lib/results/ELANCO_Myelanco_IR-key-results.log
+[36mINFO[0m[2020-02-25T17:17:54Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:18:16Z] No leaks detected. 58 commits audited in 21 seconds 347 milliseconds 933 microseconds 
+lib/results/ELANCO_NL-key-results.log
+[36mINFO[0m[2020-02-25T16:56:48Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:57:01Z] 1 leaks detected. 88 commits audited in 12 seconds 91 milliseconds 725 microseconds 
+lib/results/ELANCO_NO-key-results.log
+[36mINFO[0m[2020-02-25T17:20:45Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:20:53Z] 1 leaks detected. 55 commits audited in 7 seconds 813 milliseconds 130 microseconds 
+lib/results/ELANCO_OCS-QuiK-Clik-Extra-key-results.log
+[36mINFO[0m[2020-02-25T16:53:16Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:53:17Z] No leaks detected. 3 commits audited in 1 second 21 milliseconds 187 microseconds 
+lib/results/ELANCO_OCS-QuiK-ticksfleas-key-results.log
+[36mINFO[0m[2020-02-25T16:46:19Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:46:20Z] No leaks detected. 12 commits audited in 871 milliseconds 358 microseconds 
+lib/results/ELANCO_OCS_1_TEMPLATE-key-results.log
+[36mINFO[0m[2020-02-25T16:58:04Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:58:06Z] No leaks detected. 22 commits audited in 1 second 39 milliseconds 116 microseconds 
+lib/results/ELANCO_OCS_POCKET_PUPPY-key-results.log
+[36mINFO[0m[2020-02-25T16:49:22Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:49:23Z] No leaks detected. 37 commits audited in 1 second 83 milliseconds 593 microseconds 
+lib/results/ELANCO_OCS_QuiK_Dryrun-key-results.log
+[36mINFO[0m[2020-02-25T16:46:02Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:46:03Z] No leaks detected. 87 commits audited in 1 second 220 milliseconds 91 microseconds 
+lib/results/ELANCO_ONSIOR_MICROSITE-key-results.log
+[36mINFO[0m[2020-02-25T16:22:31Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:22:42Z] No leaks detected. 122 commits audited in 10 seconds 850 milliseconds 133 microseconds 
+lib/results/ELANCO_OSURNIAMICROSITE_DE-key-results.log
+[36mINFO[0m[2020-02-25T16:25:59Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:26:03Z] 2 leaks detected. 63 commits audited in 3 seconds 524 milliseconds 134 microseconds 
+lib/results/ELANCO_OSURNIA_NL-key-results.log
+[36mINFO[0m[2020-02-25T16:33:46Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:33:50Z] No leaks detected. 14 commits audited in 3 seconds 972 milliseconds 171 microseconds 
+lib/results/ELANCO_OtitisExternaOsurniaUK-key-results.log
+[36mINFO[0m[2020-02-25T16:22:52Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:22:53Z] No leaks detected. 125 commits audited in 871 milliseconds 156 microseconds 
+lib/results/ELANCO_PETHEALTH-key-results.log
+[36mINFO[0m[2020-02-25T17:46:12Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:48:49Z] No leaks detected. 756 commits audited in 2 minutes 36 seconds 146 milliseconds 365 microseconds 
+lib/results/ELANCO_PET_HEALTH-key-results.log
+[36mINFO[0m[2020-02-25T17:26:51Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:26:52Z] No leaks detected. 2 commits audited in 380 milliseconds 522 microseconds 
+lib/results/ELANCO_PROTECTINGYOURPET-AU-key-results.log
+[36mINFO[0m[2020-02-25T16:54:25Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:54:26Z] No leaks detected. 4 commits audited in 389 milliseconds 836 microseconds 
+lib/results/ELANCO_PWA-key-results.log
+[36mINFO[0m[2020-02-25T17:10:20Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:10:24Z] No leaks detected. 34 commits audited in 3 seconds 354 milliseconds 240 microseconds 
+lib/results/ELANCO_Preference_Center-key-results.log
+[36mINFO[0m[2020-02-25T17:26:43Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:26:44Z] No leaks detected. 2 commits audited in 552 milliseconds 85 microseconds 
+lib/results/ELANCO_Prototype-key-results.log
+[36mINFO[0m[2020-02-25T16:49:48Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:49:58Z] 13 leaks detected. 66 commits audited in 8 seconds 762 milliseconds 298 microseconds 
+lib/results/ELANCO_Puppy_Kitten-key-results.log
+[36mINFO[0m[2020-02-25T17:19:16Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:19:30Z] No leaks detected. 1026 commits audited in 12 seconds 759 milliseconds 583 microseconds 
+lib/results/ELANCO_Quik_Template-key-results.log
+[36mINFO[0m[2020-02-25T16:40:11Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:40:15Z] No leaks detected. 120 commits audited in 3 seconds 368 milliseconds 598 microseconds 
+lib/results/ELANCO_RU-key-results.log
+[36mINFO[0m[2020-02-25T16:16:12Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:16:17Z] No leaks detected. 59 commits audited in 5 seconds 192 milliseconds 710 microseconds 
+lib/results/ELANCO_RU_NEW-key-results.log
+[36mINFO[0m[2020-02-25T16:54:08Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:54:18Z] 1 leaks detected. 47 commits audited in 9 seconds 901 milliseconds 629 microseconds 
+lib/results/ELANCO_ReviseTryChange_EU-key-results.log
+[36mINFO[0m[2020-02-25T16:34:58Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:35:01Z] No leaks detected. 26 commits audited in 2 seconds 233 milliseconds 560 microseconds 
+lib/results/ELANCO_Rumensin-key-results.log
+[36mINFO[0m[2020-02-25T17:15:40Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:15:47Z] No leaks detected. 264 commits audited in 5 seconds 536 milliseconds 918 microseconds 
+lib/results/ELANCO_SALMONELLA360-key-results.log
+[36mINFO[0m[2020-02-25T16:35:23Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:35:32Z] 1 leaks detected. 66 commits audited in 8 seconds 479 milliseconds 460 microseconds 
+lib/results/ELANCO_SE-key-results.log
+[36mINFO[0m[2020-02-25T16:19:09Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:19:10Z] No leaks detected. 31 commits audited in 1 second 334 milliseconds 332 microseconds 
+lib/results/ELANCO_SEO_Portal-key-results.log
+[36mINFO[0m[2020-02-25T17:24:31Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:24:35Z] No leaks detected. 10 commits audited in 3 seconds 547 milliseconds 349 microseconds 
+lib/results/ELANCO_STARTWITHGALLIPRANT_US-key-results.log
+[36mINFO[0m[2020-02-25T16:49:07Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:49:11Z] No leaks detected. 108 commits audited in 1 second 535 milliseconds 70 microseconds 
+lib/results/ELANCO_STUDENTS-key-results.log
+[36mINFO[0m[2020-02-25T16:57:53Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:57:54Z] No leaks detected. 254 commits audited in 1 second 63 milliseconds 816 microseconds 
+lib/results/ELANCO_TCMR-key-results.log
+[36mINFO[0m[2020-02-25T16:51:37Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:51:37Z] No leaks detected. 13 commits audited in 388 milliseconds 363 microseconds 
+lib/results/ELANCO_TRIFEXIS-key-results.log
+[36mINFO[0m[2020-02-25T16:17:38Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:17:42Z] 5 leaks detected. 160 commits audited in 2 seconds 640 milliseconds 656 microseconds 
+lib/results/ELANCO_Thermal_Aid-key-results.log
+[36mINFO[0m[2020-02-25T17:25:51Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:25:57Z] 2 leaks detected. 95 commits audited in 5 seconds 222 milliseconds 805 microseconds 
+lib/results/ELANCO_VERMIFUGEONSENSEMBLE_FR-key-results.log
+[36mINFO[0m[2020-02-25T16:46:10Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:46:11Z] No leaks detected. 115 commits audited in 680 milliseconds 258 microseconds 
+lib/results/ELANCO_VERTEBRALHEARTSCORE_CH-key-results.log
+[36mINFO[0m[2020-02-25T16:30:47Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:30:49Z] No leaks detected. 51 commits audited in 1 second 828 milliseconds 974 microseconds 
+lib/results/ELANCO_VET_HEALTH-key-results.log
+[36mINFO[0m[2020-02-25T17:26:59Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:27:00Z] No leaks detected. 3 commits audited in 567 milliseconds 738 microseconds 
+lib/results/ELANCO_VITAL90DAYS_AT-key-results.log
+[36mINFO[0m[2020-02-25T16:14:33Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:14:34Z] No leaks detected. 17 commits audited in 1 second 413 milliseconds 805 microseconds 
+lib/results/ELANCO_VITAL90DAYS_CH-key-results.log
+[36mINFO[0m[2020-02-25T16:14:44Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:14:46Z] No leaks detected. 19 commits audited in 1 second 499 milliseconds 
+lib/results/ELANCO_VITAL90DAYS_NL-key-results.log
+[36mINFO[0m[2020-02-25T16:15:56Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:16:04Z] No leaks detected. 46 commits audited in 7 seconds 690 milliseconds 200 microseconds 
+lib/results/ELANCO_WEB_ACC-key-results.log
+[36mINFO[0m[2020-02-25T17:11:52Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:13:24Z] 21 leaks detected. 62 commits audited in 1 minute 28 seconds 870 milliseconds 144 microseconds 
+lib/results/ELANCO_WORMPATROL-key-results.log
+[36mINFO[0m[2020-02-25T16:18:56Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:19:00Z] No leaks detected. 191 commits audited in 2 seconds 712 milliseconds 678 microseconds 
+lib/results/ELANCO_comfortis_com_ar-key-results.log
+[36mINFO[0m[2020-02-25T17:16:14Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:16:14Z] No leaks detected. 35 commits audited in 450 milliseconds 770 microseconds 
+lib/results/ELANCO_compliancetests_npm_lc-key-results.log
+[36mINFO[0m[2020-02-25T16:50:43Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:50:43Z] No leaks detected. 52 commits audited in 56 milliseconds 864 microseconds 
+lib/results/ELANCO_conagitadejated_es-key-results.log
+[36mINFO[0m[2020-02-25T17:22:24Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:22:25Z] No leaks detected. 35 commits audited in 827 milliseconds 2 microseconds 
+lib/results/ELANCO_credelio_brazil-key-results.log
+[36mINFO[0m[2020-02-25T17:20:18Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:20:23Z] 2 leaks detected. 71 commits audited in 2 seconds 687 milliseconds 905 microseconds 
+lib/results/ELANCO_credelio_com_ar-key-results.log
+[36mINFO[0m[2020-02-25T17:16:06Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T17:16:07Z] 2 leaks detected. 48 commits audited in 490 milliseconds 109 microseconds 
+lib/results/ELANCO_credelio_us-key-results.log
+[36mINFO[0m[2020-02-25T16:34:29Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:34:29Z] No leaks detected. 9 commits audited in 307 milliseconds 274 microseconds 
+lib/results/ELANCO_elanco-404page-npm-lc-key-results.log
+[36mINFO[0m[2020-02-25T16:50:36Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:50:36Z] No leaks detected. 39 commits audited in 24 milliseconds 570 microseconds 
+lib/results/ELANCO_elanco_comagitanaomais_pt-key-results.log
+[36mINFO[0m[2020-02-25T17:24:42Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:24:43Z] No leaks detected. 20 commits audited in 522 milliseconds 539 microseconds 
+lib/results/ELANCO_igniteDev-key-results.log
+[36mINFO[0m[2020-02-25T16:52:26Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:52:39Z] No leaks detected. 93 commits audited in 12 seconds 564 milliseconds 753 microseconds 
+lib/results/ELANCO_ocs-quik-digitalmarketing-key-results.log
+[36mINFO[0m[2020-02-25T16:53:06Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:53:07Z] No leaks detected. 9 commits audited in 1 second 37 milliseconds 60 microseconds 
+lib/results/ELANCO_ocs_enzymebreakers_com-key-results.log
+[36mINFO[0m[2020-02-25T17:16:24Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:16:25Z] No leaks detected. 26 commits audited in 1 second 33 milliseconds 865 microseconds 
+lib/results/ELANCO_otitecanina_it-key-results.log
+[36mINFO[0m[2020-02-25T17:15:54Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:15:54Z] No leaks detected. 27 commits audited in 770 milliseconds 745 microseconds 
+lib/results/ELANCO_stopacarorojo_es-key-results.log
+[36mINFO[0m[2020-02-25T17:22:39Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:22:41Z] No leaks detected. 34 commits audited in 1 second 953 milliseconds 804 microseconds 
+lib/results/ELANCO_stoppouxrouges_fr-key-results.log
+[36mINFO[0m[2020-02-25T17:22:54Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:22:57Z] No leaks detected. 68 commits audited in 2 seconds 717 milliseconds 637 microseconds 
+lib/results/ELANCO_vetphone-key-results.log
+[36mINFO[0m[2020-02-25T17:25:43Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T17:25:44Z] No leaks detected. 13 commits audited in 416 milliseconds 717 microseconds 
+lib/results/ELANCO_webops_survey-key-results.log
+[36mINFO[0m[2020-02-25T16:35:39Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:35:40Z] No leaks detected. 1 commits audited in 476 milliseconds 627 microseconds 
+lib/results/Elanco_CA-key-results.log
+[36mINFO[0m[2020-02-25T16:31:01Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:31:04Z] No leaks detected. 51 commits audited in 2 seconds 934 milliseconds 231 microseconds 
+lib/results/Elanco_Cheristin_Indexer-key-results.log
+[36mINFO[0m[2020-02-25T16:31:29Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:31:30Z] No leaks detected. 23 commits audited in 679 milliseconds 603 microseconds 
+lib/results/Elanco_Chirugie_FR-key-results.log
+[36mINFO[0m[2020-02-25T16:31:55Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:31:57Z] No leaks detected. 16 commits audited in 2 seconds 135 milliseconds 15 microseconds 
+lib/results/Elanco_FarmAnimalHealth-key-results.log
+[36mINFO[0m[2020-02-25T16:15:15Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:15:32Z] 23 leaks detected. 768 commits audited in 15 seconds 416 milliseconds 605 microseconds 
+lib/results/Elanco_Hundkatzeentwurmen-key-results.log
+[36mINFO[0m[2020-02-25T16:31:17Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:31:20Z] No leaks detected. 46 commits audited in 2 seconds 997 milliseconds 478 microseconds 
+lib/results/Elanco_IMVIXA_Product_Chile-key-results.log
+[36mINFO[0m[2020-02-25T16:32:43Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:32:47Z] No leaks detected. 58 commits audited in 4 seconds 410 milliseconds 586 microseconds 
+lib/results/Elanco_IT-key-results.log
+[36mINFO[0m[2020-02-25T16:17:08Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:17:19Z] 1 leaks detected. 188 commits audited in 11 seconds 46 milliseconds 292 microseconds 
+lib/results/Elanco_Osurnia_DUT-key-results.log
+[36mINFO[0m[2020-02-25T16:25:16Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:25:18Z] No leaks detected. 26 commits audited in 995 milliseconds 719 microseconds 
+lib/results/Elanco_Osurnia_FRE-key-results.log
+[36mINFO[0m[2020-02-25T16:25:08Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:25:09Z] No leaks detected. 27 commits audited in 934 milliseconds 67 microseconds 
+lib/results/Elanco_PSIpromotionpage_AU-key-results.log
+[36mINFO[0m[2020-02-25T16:27:51Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:27:54Z] No leaks detected. 129 commits audited in 2 seconds 181 milliseconds 656 microseconds 
+lib/results/Elanco_galliprant_us-key-results.log
+[36mINFO[0m[2020-02-25T16:24:26Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:24:40Z] 9 leaks detected. 837 commits audited in 12 seconds 534 milliseconds 88 microseconds 
+lib/results/Elanco_petreach_us-key-results.log
+[36mINFO[0m[2020-02-25T16:23:30Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:23:31Z] No leaks detected. 18 commits audited in 248 milliseconds 35 microseconds 
+lib/results/Elanco_rumensinfeedmixing_us-key-results.log
+[36mINFO[0m[2020-02-25T16:23:16Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:23:21Z] 12 leaks detected. 17 commits audited in 4 seconds 741 milliseconds 718 microseconds 
+lib/results/Elanco_truthaboutdairy_us-key-results.log
+[36mINFO[0m[2020-02-25T16:24:54Z] cloning... /src                              
+[36mINFO[0m[2020-02-25T16:24:55Z] No leaks detected. 14 commits audited in 349 milliseconds 279 microseconds 
+lib/results/elanco_vn-key-results.log
+[36mINFO[0m[2020-02-25T16:14:13Z] cloning... /src                              
+[33mWARN[0m[2020-02-25T16:14:17Z] 1 leaks detected. 31 commits audited in 3 seconds 51 milliseconds 983 microseconds 

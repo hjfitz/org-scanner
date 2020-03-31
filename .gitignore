@@ -13,3 +13,14 @@
 
 # Dependency directories (remove the comment below to include it)
 vendor/
+
+.env
+node_modules/
+
+*.log
+.DS_Store
+static-data.json
+results.zip
+results/
+ssca
+out.jsonc
